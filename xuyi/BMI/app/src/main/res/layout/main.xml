@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadeScrollbars="true"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rgSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/female" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvHeight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/height" />
+
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tvWeigth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/weight" />
+
+    <EditText
+        android:id="@+id/EtWeight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/marginTop" >
+
+        <Button
+            android:id="@+id/btnCompute"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/buttonHeight"
+            android:text="@string/btncompute" />
+
+        <Button
+            android:id="@+id/btnMore"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/buttonHeight"
+            android:layout_toRightOf="@id/btnCompute"
+            android:text="@string/btnMore" />
+
+        <Button
+            android:id="@+id/btnAboutauthor"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/buttonHeight"
+            android:layout_toRightOf="@id/btnMore"
+            android:text="@string/btnAboutauthor" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/buttonHeight"
+            android:layout_toRightOf="@id/btnAboutauthor"
+            android:text="@string/btnExit" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvNotice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop"
+        android:text="@string/notice"
+        android:textColor="#FF0000"
+        android:textStyle="bold"/>
+
+</LinearLayout>
